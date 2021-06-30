@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+}
+/* .flexSection {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 600px;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 500px;
+    background-color: rgb(32, 31, 31);
+}
+.pinkFlex{
+    background-color: pink;
+}
+.purpleFlex{
+    background-color: rgb(187, 59, 187);
+}
+.tealFlex{
+    background-color: teal;
+}
+.greenFlex{
+    background-color: seagreen;
+}
+.yellowFlex{
+    background-color: rgb(233, 233, 87);
+}
+.greyFlex{
+    background-color: slategrey;
+} 
+.exercise{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+    flex: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 500px;
+}
+.flexTop, .flexSmall, .flexBottom {
+    background-color: rgb(105, 178, 207);
+    justify-content: space-between;
+}
+.flexTop, .flexBottom{
+    height: 50px;
+    align-items: stretch;
+}
+.flexTop{
+    align-items: flex-start;
+}
+.flexSmall{
+    align-self: center;
+    height: 150px;
+    width: 400px;
+}
+.flexBottom{
+    align-items: flex-end;
+}*/
+.grid{
+    border: 2px solid black;
+    display: grid;
+    height: 600px;
+    width: 500px;
+    margin: 80px;
+    padding: 30px 50px 30px 15px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+.pinkG{
+    background-color: palevioletred;
+}
+.purpleG{
+    background-color: rebeccapurple;
+}
+.blueG{
+    background-color: royalblue;
+    grid-column: 1;
+}

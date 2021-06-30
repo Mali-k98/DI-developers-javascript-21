@@ -1,0 +1,23 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('spiderman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: 'teko', 'sans serif';
+    font-size: 90px;
+    color: rgb(165, 4, 4);
+}
+
+.paragraph{
+    color: seashell;
+    font-family: 'teko', 'sans serif';
+    align-content: flex-end;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        color: rgb(3, 3, 105);
+    }
+ }

@@ -1,0 +1,40 @@
+
+.stripe{
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white;
+}
+.red{
+    background-color: red;
+}
+.secondlist{
+    color: blue;
+}
+.ipsum{
+  text-transform: uppercase;
+}
+.firstparagraph{
+    background-color: palevioletred;
+}
+.secondparagraph{
+    background-color: turquoise;
+    padding: 20px;
+    margin: 10px;
+}
+.parent{
+    background-color: grey;
+    margin: 100px;
+    display: block;
+}
+.orange{
+    background-color: orange;
+}
+.teal{
+    background-color: teal;
+}

@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 204);
+}
+.grid, .grid2, .grid3{
+    padding: 5px;
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 5px;
+}
+.purple{
+    background-color: rgb(130, 80, 165);
+}
+.teal{
+    background-color: rgb(65, 206, 206);
+}
+.orange{
+    background-color: rgb(252, 133, 89);
+}
+.black{
+    background-color: rgb(22, 22, 22);
+}
+.darkgrey{
+    background-color: rgb(46, 46, 46);
+}
+.grey{
+    background-color: dimgrey;
+}
+.lightgrey{
+    background-color: darkgrey;
+}
+.grid3{
+    padding: 0px;
+    grid-gap: 0px;
+}
+.white{
+    background-color: white;
+}
+.lightred{
+    background-color: rgb(240, 99, 99);
+}
+.red{
+    background-color: rgb(175, 25, 25);
+}
