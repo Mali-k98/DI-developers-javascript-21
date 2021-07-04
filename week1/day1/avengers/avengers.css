@@ -1,20 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 body{
-    padding: 0px;
-    margin: 0px;
     background-image: url('spiderman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'teko', 'serif';
 }
-header{
-    font-family: 'teko', 'sans serif';
-    font-size: 90px;
+h1{
     color: rgb(165, 4, 4);
+    font-size: 90px;
 }
-
-.paragraph{
+nav{
+    background-color: rgb(165, 4, 4);
+    height: 10vh;
+}
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+ul{
+    float: right;
+    margin-right: 20px;
+}
+ul, li{
+    display: inline-block;
+    line-height: 80px;
+}
+ul a{
     color: seashell;
-    font-family: 'teko', 'sans serif';
-    align-content: flex-end;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+a:hover{
+    color: rgb(3, 3, 105);
+}
+.main {
+    height: 50vh;
+    width: 50vw;
+    margin: 50px;
+}
+.paragraph p{
+    color: seashell;
+    font-size: 1.2em;
 }
 @media all and (min-width: 768px) and (max-width: 1024px) {
     header{

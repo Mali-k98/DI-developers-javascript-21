@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+a, h1, p, h2, h4, h6, h5{
+    font-family: 'Cinzel', serif;
+    color: seashell;
+}
+h1, h2, h6, h5{
+    color: teal;
+}
+h1, p, h2, h4{
+    text-align: center;
+}
+.navbar{
+    background-color: teal;
+    width: 100%;
+    box-shadow: 1px 5px 10px rgba(0, 128, 128, 0.705);
+    height: 10vh;
+    position: relative;
+}
+ul{
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin-left: auto;
+}
+a{
+    padding: 2px;
+    text-decoration: none;
+    margin-left: auto;
+}
+a:hover{
+    color: rgb(2, 189, 189);
+}
+.header{
+    background-image: url('clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0px;
+    padding: 60px;
+    font-size: 80px;
+    font-weight: 800;
+}
+p{
+    padding: 5px;
+    background-color: rgba(135, 152, 155, 0.356);
+    background-size: auto;
+}
+.sections{
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(173, 191, 192);
+    height: 200vh;
+    border-bottom: rgb(73, 79, 80);
+}
+.col-md-4{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgba(0, 128, 128, 0.579);
+}
+.col-md-8{
+    border-left: 2px solid teal;
+}
+.col-md-12{
+    border: 1px solid teal;
+}
+.fade-in{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.carousel-inner{
+    height: 400px;
+    width: 550px;
+    margin-left: 500px;
+}
+.carousel-inner img{
+    height: 100%;
+}
+.blog, .team, .row{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog div{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+.blog img{
+    height: 50px;
+    width: 50px;
+}
+.team div{
+    height: 320px;
+    width: 90px;
+    display: inline-block;
+}
+.team img{
+    height: 150px;
+    width: 150px;
+}
+.card{
+    padding: 35px;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+.footer {
+    margin: 0;
+    padding: 100px;
+    border-top: 1px solid teal;
+    background-color: rgb(173, 191, 192);
+    height: 60vh;
+}
+.form form{
+    align-items: center;
+    justify-content: center;
+}
