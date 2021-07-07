@@ -1,4 +1,4 @@
-let sentence = 'today was not bad! i had fun!';
+let sentence = 'today was not that bad! i had fun!';
 // let wordSplit = sentence.split(" ")
 let notWord = sentence.indexOf('not');
 let badWord = sentence.indexOf('bad');
