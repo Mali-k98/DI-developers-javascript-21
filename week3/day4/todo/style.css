@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(236, 119, 119);
+    display: flex;
+    justify-content: center;
+}
+form, div{
+    margin: 20px;
+    margin-top: 30vh;
+    background-color: rgb(236, 214, 184);
+    width: 40vw;
+}
+.form{
+    margin: 20px;
+}
+ul{
+
+}

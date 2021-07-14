@@ -8,14 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="dropBox"></div>
-
-    <p id="drag" draggable="true">drag mee</p>
-
-<!--    <div class="box" id="box" draggable="true"></div>
-
-    <button type="button" onclick="move()">move box</button>
-    <button type="button" onclick="stop()">stopp!!</button> -->
+    <input onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" type="text" name="text" id="text">
     <script src="script.js"></script>
 </body>
 </html>
