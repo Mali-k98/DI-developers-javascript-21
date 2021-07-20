@@ -23,7 +23,7 @@ groceries.other = {
     meansOfPayment : ["cash", "creditCard"]
 }
 
-console.log(groceries);
+// console.log(groceries);
 
 groceries.totalPrice ="$35" //doesnt change original
 
