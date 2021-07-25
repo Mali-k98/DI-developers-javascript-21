@@ -76,13 +76,16 @@ let filterer = (r) => {
     // console.log(r.target.value)
     let robotArray = robots.filter(robot => {
         return robot['robbo'].toLowerCase().includes(r.target.value)
+    
     })
+    for(let i = 0; i < robots.length; i ++){
+        if (robots === robotArray){
+            cards.style.display = "block";
+        }else {
+            cards.style.display = "none";
+        }}
     console.log(robotArray)
-    if (allR === robotArray){
-        cards.style.display = "";
-    }else {
-        cards.style.display = "none";
-    }
+    allR();
 }
 
 
@@ -92,7 +95,7 @@ searchBar.addEventListener('keyup', filterer)
 
 
 
-const allR = robots.forEach(i => {
+function allR (){ robots.forEach(i => {
     let card = document.createElement('div');
     card.classList.add('card');
     let profile = document.createElement('img')
@@ -108,7 +111,9 @@ const allR = robots.forEach(i => {
     card.appendChild(info)
     card.appendChild(mail)
     cards.appendChild(card);
-    return card
+    // return card
 })
+}
+allR();
 
-
+    
