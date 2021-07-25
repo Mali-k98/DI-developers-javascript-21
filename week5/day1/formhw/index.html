@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            border: 1px solid black;
+            width: 20vw;
+        }
+        #info{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="action.html" method="GET">
+        <div>
+            <label for="name">your name:</label>
+            <input type="text" id="name" placeholder="your name"> 
+            <label for="info">comments:</label>
+            <input type="text" id="info" placeholder="let us know"> 
+        </div>
+        <div>
+            <button type="submit">send!</button>
+        </div>
+    </form>
+    <form action="action.html" method="POST">
+        <div>
+            <label for="name">your name:</label>
+            <input type="text" id="name" placeholder="your name"> 
+            <label for="info">comments:</label>
+            <input type="text" id="info" placeholder="let us know"> 
+        </div>
+        <div>
+            <button type="submit">send!</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

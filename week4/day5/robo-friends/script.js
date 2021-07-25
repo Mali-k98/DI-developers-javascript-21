@@ -78,11 +78,13 @@ let filterer = (r) => {
         return robot['robbo'].toLowerCase().includes(r.target.value)
     
     })
-    for(let i = 0; i < robots.length; i ++){
-        if (robots === robotArray){
-            cards.style.display = "block";
+    let allCArds = document.querySelectorAll('.card')
+    console.log(allCArds[0].value)
+    for(let i = 0; i < allCArds.length; i ++){
+        if (robotArray.includes(allCArds[i].robbo.value)){
+            allCArds[i].style.display = "block";
         }else {
-            cards.style.display = "none";
+            allCArds[i].style.display = "none";
         }}
     console.log(robotArray)
     allR();
