@@ -72,22 +72,38 @@ const robots = [
     ];
     
     
+// let filterer = (r) => {
+//     // console.log(r.target.value)
+//     let robotArray = robots.filter(robot => {
+//         return robot['robbo'].toLowerCase().includes(r.target.value)
+    
+//     })
+//     let allCArds = document.querySelectorAll('.card')
+//     console.log(allCArds[0].value)
+//     for(let i = 0; i < allCArds.length; i ++){
+//         if (robotArray.includes(allCArds[i].robbo.value)){
+//             allCArds[i].style.display = "block";
+//         }else {
+//             allCArds[i].style.display = "none";
+//         }}
+//     console.log(robotArray)
+//     allR();
+// }
 let filterer = (r) => {
     // console.log(r.target.value)
     let robotArray = robots.filter(robot => {
         return robot['robbo'].toLowerCase().includes(r.target.value)
     
     })
-    let allCArds = document.querySelectorAll('.card')
-    console.log(allCArds[0].value)
+    
     for(let i = 0; i < allCArds.length; i ++){
-        if (robotArray.includes(allCArds[i].robbo.value)){
-            allCArds[i].style.display = "block";
-        }else {
-            allCArds[i].style.display = "none";
-        }}
+        allCArds[i].style.display = "none";
+    }
+    for(let i = 0; i < robotArray.length; i ++){
+        let temp = robotArray[i].id;
+            allCArds[temp-1].style.display = "block";
+    }
     console.log(robotArray)
-    allR();
 }
 
 
