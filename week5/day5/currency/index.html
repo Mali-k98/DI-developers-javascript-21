@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        #result{
+            background-color: rgba(0, 0, 0, 0.74);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Currency Converter</h1> <br>
+        <label for="money1">Convert from:</label>
+        <select name="money1" class="currency" id='money1'>
+        <option>choose</option>
+        </select>
+        <input type="number" placeholder="0">
+        <label for="money2">To:</label>
+        <select name="money2" class="currency" id='money2'>
+        <option>choose</option>
+        </select>
+        <input type="number" placeholder="0">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
