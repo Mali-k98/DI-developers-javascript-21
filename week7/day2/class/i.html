@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>get:</h2>
+    <form action="http://localhost:3000/login">
+        username:<input type="text" name="user" value="" placeholder="username"><br>
+        password:<input type="password" name="pass" value="" placeholder="password"><br>
+        <input type="submit" name="sub">
+    </form>
+    <h2>post:</h2>
+    <form action="http://localhost:3000/login">
+        username:<input type="text" name="user" value="" placeholder="username"><br>
+        password:<input type="password" name="pass" value="" placeholder="password"><br>
+        <input type="submit" name="sub">
+    </form>
+    <h2>GET fetch:</h2>
+    <form action="http://localhost:3000/login">
+        username:<input type="text" name="user" value="" placeholder="username" id="user"><br>
+        password:<input type="password" name="pass" value="" placeholder="password" id="pass"><br>
+        <button type="button" onclick="sendData()">send data</button>
+    </form>
+    <h2>robots:</h2>
+    <!-- <form action="https://jsonplaceholder.typicode.com/users"> -->
+    <button type="button" id="getR" onclick="getRobo">get robots</button>
+    <!-- </form> -->
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
