@@ -69,13 +69,13 @@ function movieP(){
     let movie = document.getElementById('moviePlan')
     movie.innerHTML= '';
     let title = document.createElement('h1')
-    title.innerText = `title: ${hp.title}`;
+    title.innerText = `title: ${hp.title.value}`;
     let drink = document.createElement('h3')
-    drink.innerText = `drink: ${hp.drink}`;
+    drink.innerText = `drink: ${hp.drink.value}`;
     let main = document.createElement('h3')
-    main.innerText = `main: ${hp.main}`;
+    main.innerText = `main: ${hp.main.value}`;
     let snack = document.createElement('h3')
-    snack.innerText = `snack: ${hp.snack}`;
+    snack.innerText = `snack: ${hp.snack.value}`;
     let dessert= document.createElement('h3')
     dessert.innerText = `dessert: ${hp.dessert}`;
     movie.appendChild(title)
