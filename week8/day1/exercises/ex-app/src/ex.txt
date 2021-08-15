@@ -1,0 +1,43 @@
+ReactDOM.render(<h1>hello world!</h1>, document.getElementById('root'))
+
+const myel = React.createElement('h1', {}, 'there is no jsx');
+ReactDOM.render(myel, document.getElementById('root'));
+
+
+const myelement = <h1>I Love JSX!</h1>;
+ReactDOM.render(myelement, document.getElementById('root'));
+
+const sum = 5+5; 
+const el = <h1>`react is ${sum} better with jsx`</h1>;
+ReactDOM.render(el, document.getElementById('root'));
+
+ReactDOM.render(<header>i am a header</header>, document.getElementById('root'))
+ReactDOM.render(<header>i am a header too</header>, document.getElementById('root'))
+
+const list = <ul>
+  <li>banana</li>
+  <li>cherry</li>
+  <li>kiwi</li>
+</ul>
+ReactDOM.render(list,document.getElementById('root'))
+
+const text = <input type='text'></input>
+ReactDOM.render(text,document.getElementById('root'))
+
+
+const object = {
+  first_name: 'Bob',
+  last_name: 'Dylan'
+};
+let name = `my name is ${object.first_name} ${object.last_name}`
+ReactDOM.render(name,document.getElementById('root'))
+
+const animals = ['Horse','Turtle','Elephant','Monkey'];
+const animap = animals.map(type=>{
+  return type
+})
+let lItem = `${animap}`
+const ol = <ol>
+  <li></li>
+</ol>
+ReactDOM.render(ol,document.getElementById('root'))

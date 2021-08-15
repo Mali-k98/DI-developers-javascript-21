@@ -1,121 +1,42 @@
+const cors =require('cors')
+const exp = require('express')
+const app = exp()
+app.use(cors())
+// const fs = require('fs')
+
+const knex= require('knex')
+const db = knex({
+    client:'pg',
+    connection:{
+    host: '127.0.0.1',
+    user: 'postgres',
+    password: 'puppies8991',
+    database: 'movienight'
+}
+})
+
+// console.log('hello')
+
+app.get('/',(req,res )=>{
+    console.log('hi')
+    db
+    .select('*').from('hp')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+
+})
+app.get('/',(req,res)=>{
+    db
+    .select('*').from('disney')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+})
+app.get('/',(req,res)=>{
+    db
+    .select('*').from('pixar')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+})
 
 
-
-
-let horror = [
-    {
-        title: 'the ring',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'saw',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'jaws',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'orphan',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'annabelle',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'paranormal activity',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'saw',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'the counjouring',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-]
-
-let musical = [
-    {
-        title: 'grease',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'rent',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'les miserable',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'westside story',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'sound of music',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'the greatest showman',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'hair',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'oliver',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-]
+app.listen(3000)
