@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import Country from './compondent.js/Capital';
-import Capital from './compondent.js/Capital';
+import CountriesCities from './compondent.js/CountriesCities';
+import React from 'react';
 import './App.css';
-import Capital from './compondent.js/Capital';
 
-function App() {
-  return (
-    <div className="App">
-      <Country/>
-      <Capital/>
-    </div>
-  );
+
+const App =()=> {
+  return(
+    <CountriesCities/>
+  )
+  
 }
 
 export default App;

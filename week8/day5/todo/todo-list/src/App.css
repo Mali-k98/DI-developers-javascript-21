@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: lavender;
+}
+
+.input{
+  width:100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+}
+.list{
+  background-color: rgb(238, 183, 183);
+  width: 50vw;
+}
+.list:hover{
+  text-decoration: line-through;
+}
+

@@ -17,7 +17,7 @@ const db = knex({
 
 // console.log('hello')
 
-app.get('/',(req,res )=>{
+app.get('/hp',(req,res )=>{
     console.log('hi')
     db
     .select('*').from('hp')
@@ -25,13 +25,13 @@ app.get('/',(req,res )=>{
     .then(data=>res.send(data))
 
 })
-app.get('/',(req,res)=>{
+app.get('/disney',(req,res)=>{
     db
     .select('*').from('disney')
     // .then(data=> console.log(data))
     .then(data=>res.send(data))
 })
-app.get('/',(req,res)=>{
+app.get('/pixar',(req,res)=>{
     db
     .select('*').from('pixar')
     // .then(data=> console.log(data))

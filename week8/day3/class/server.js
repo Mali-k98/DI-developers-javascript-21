@@ -1,25 +1,48 @@
 const exp = require('express')
-const app = exp()
 const cors = require('cors')
+const app = exp()
 app.use(cors)
 
-const knex = require('knex')({
-    client: 'mysql',
-    version: '5.7',
+const knex = require('knex')
+const db = knex({
+    client: 'pg',
     connection: {
         host : '127.0.0.1',
+        port: '5432',
         user : 'postgres',
         password : 'puppies8991',
-        database : 'countries'
+        database : 'dvdrental'
     }
 })
 
 app.get('/countries', function(req,res){
-    knex.select('*').from('countries').where('capital')
-    .then(data=>console.log(data))
+
+    getCountry()
+    // .then(r=>console.log(r))
+    .then(result=>res.send(result))
+    .catch(err=>res.send({message:err.message}))
+
 })
-app.get('/countries', function(req,res){
-    knex.select('*').from('countries').where('country')
-    .then(data=>console.log(data))
+
+
+app.get('/cities/:country_id', function(req,res){
+    getCities()
+    // .then(r=>console.log(r))
+    .then(result=>res.send(result))
+    .catch(err=>res.send({message:err.message}))
 })
-app.listen(8080)
+
+
+const getCountry = ()=>{
+    return db ('country')
+    .select('country',('country_id'))
+    .orderBy('country')
+}
+const getCities=(id)=>{
+    return db('city')
+    .select('city','city_id')
+    .where({country_id:id})
+    .orderBy('city')
+}
+
+app.listen(4000)

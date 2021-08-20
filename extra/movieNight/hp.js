@@ -1,6 +1,6 @@
 let info =[]
 
-let d =fetch('http://localhost:3000')
+let d =fetch('http://localhost:3000/hp')
 .then(res=> res.json())
 .then(data => {
     console.log(data);
