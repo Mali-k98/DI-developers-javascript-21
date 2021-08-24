@@ -1,5 +1,5 @@
 const initState = {
-    movieNo:'',
+    movieNo:0,
     movieList:
     [
     {title: 'Spider-Man: Homecoming', releaseDate: '05-07-2017', rating: 7.4,},

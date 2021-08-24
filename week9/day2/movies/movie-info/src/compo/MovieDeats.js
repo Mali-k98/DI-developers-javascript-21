@@ -7,15 +7,8 @@ function MovieDeats(props) {
     return (
         <div>
             <h1>movie details</h1>
-            {
-                
-                movieList.map((item,i)=>{
-                    
-                    return(
-                        <p>title: {item.title} release date: {item.releaseDate} rating {item.rating}</p>
-                    )
-                })
-            }
+            
+            <p>title: {movieList[movieNo].title} release date: {movieList[movieNo].releaseDate} rating {movieList[movieNo].rating}</p>
         </div>
     )
 }
