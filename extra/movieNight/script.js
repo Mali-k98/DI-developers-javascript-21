@@ -37,6 +37,23 @@ app.get('/pixar',(req,res)=>{
     // .then(data=> console.log(data))
     .then(data=>res.send(data))
 })
-
+app.get('/marvel',(req,res)=>{
+    db
+    .select('*').from('marvel')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+})
+app.get('/horror',(req,res)=>{
+    db
+    .select('*').from('horror')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+})
+app.get('/musical',(req,res)=>{
+    db
+    .select('*').from('musical')
+    // .then(data=> console.log(data))
+    .then(data=>res.send(data))
+})
 
 app.listen(3000)

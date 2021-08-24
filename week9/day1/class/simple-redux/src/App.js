@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { changeText1 } from './redux/actions';
 import { changeText2 } from './redux/actions';
+import Child from './components/Child';
 import './App.css';
 
 class App extends React.Component {
@@ -25,6 +26,10 @@ class App extends React.Component {
       
       <input type='text' onChange={this.props.handleChange}/>
       <input type='text' onChange={this.props.handleChange2}/>
+    
+    <h1>child</h1>
+    <Child/>
+    
     </div>
   );
   }
