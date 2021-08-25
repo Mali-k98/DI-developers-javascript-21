@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {createStore,applyMiddleware} from 'redux'
+import {createStore,applyMiddleware,combineReducers} from 'redux'
 import  {Provider}  from 'react-redux';
 import logger from 'redux-logger'
 import thunk from 'redux-thunk'
@@ -10,8 +10,9 @@ import thunk from 'redux-thunk'
 import 'tachyons';
 import reportWebVitals from './reportWebVitals';
 
-import {reducer} from './redux/reducer'
-const store = createStore(reducer,applyMiddleware(logger,thunk))
+// import {reducer,reducerLoad} from './redux/reducer'
+const rootReducer = combineReducers({reducer,reducerLoad})
+const store = createStore(rootReducer,applyMiddleware(logger,thunk))
 
 ReactDOM.render(
   <React.StrictMode>

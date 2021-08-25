@@ -2,7 +2,7 @@ import React from 'react';
 import Cardlist from './components/Cardlist';
 import SearchBox from './components/SearchBox';
 import { connect } from 'react-redux';
-import { fetchRobots } from './redux/actions';
+import { fetchRobots, reqRob } from './redux/actions';
 import './App.css';
 
 class App extends React.Component {
@@ -38,14 +38,16 @@ class App extends React.Component {
   }
 
   render() {
-    const {robots,searchText}=this.props
+    const {robots,searchText,isPending}=this.props
     console.log(searchText);
 
     const filterRobots = robots.filter(item => {
       return item.name.toLowerCase().includes(searchText.toLowerCase())
     })
 
-    return (
+    return !isPending ? 
+    <h1>loading</h1> :
+    (
       <div className="tc">
         <h1>robofriends</h1>
         <SearchBox  />
@@ -57,9 +59,14 @@ class App extends React.Component {
 
 const mapStateToProps=(state)=>{
   return{
-    searchText:state.searchText,
-    robots:state.robots
+    searchText:state.renderLoad.searchText,
+    robots:state.reqRob.robots,
+    isPending:state.reqRob.isPending,
+    error:state.reqRob.error
   }
 }
+const mapDispatchToProps=(dispatch)=>{
+  onReqRob:()=> dispatch(reqRob())
+}
 
-export default connect(mapStateToProps,null) (App);
+export default connect(mapStateToProps,mapDispatchToProps) (App);

@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
+import {createLogger} from 'redux-logger'
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import {count} from './reducers/count'
-
-const store = createStore(count)
+const logger = createLogger()
+const store = createStore(count,applyMiddleware(thunk,logger))
 
 ReactDOM.render(
   <React.StrictMode>

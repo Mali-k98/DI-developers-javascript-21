@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { handleSelect } from "../redux/actions";
 
 const SearchBox = (props) => {
-    const { onInputChange, onButtonClick} = props;
+    // const { onInputChange, onButtonClick} = props;
     return (
     <div className="pa2">
         <input type="text"
