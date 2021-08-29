@@ -1,0 +1,58 @@
+let musical = [
+    {
+        title: 'grease',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'rent',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'les miserable',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'westside story',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'sound of music',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'the greatest showman',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'hair',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+    {
+        title: 'oliver',
+        drink: '',
+        main: '',
+        snack: '',
+        desset: '',
+    },
+]

@@ -2,120 +2,30 @@
 
 
 
-let horror = [
-    {
-        title: 'the ring',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'saw',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'jaws',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'orphan',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'annabelle',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'paranormal activity',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'saw',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'the counjouring',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-]
 
-let musical = [
-    {
-        title: 'grease',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'rent',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'les miserable',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'westside story',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'sound of music',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'the greatest showman',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'hair',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-    {
-        title: 'oliver',
-        drink: '',
-        main: '',
-        snack: '',
-        desset: '',
-    },
-]
+
+const exp = require('express')
+const app = exp()
+// const fs = require('fs')
+
+
+const {Client}= require('pg')
+const client = new Client({
+    user:"postgres",
+    password:54321,
+    host:"localhost",
+    port:5432,
+    database:"movienight"
+})
+client.connect()
+.then(()=> console.log('connected'))
+.then(()=> client.query('select * from hp'))
+.then(results => console.table(results.rows))
+.catch(e=> console.log(e))
+.finally(()=> client.end())
+
+app.get('/',(req,res)=>{
+    res.render('index.html')
+})
+
+app.listen(3000)

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "counter",
+			"path": "..\\..\\..\\..\\counter"
+		},
+		{
+			"name": "movies",
+			"path": "..\\..\\.."
+		}
+	],
+	"settings": {}
+}
