@@ -6,9 +6,17 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+<<<<<<< HEAD
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+=======
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "redux-thunk": "^2.3.0",
+>>>>>>> c4f1b8fd1c4f0c2666b76fb45b7942384985ae37
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -34,5 +42,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.1"
+>>>>>>> c4f1b8fd1c4f0c2666b76fb45b7942384985ae37
   }
 }
