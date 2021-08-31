@@ -1,29 +1,29 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import Search from './components/Search';
-import Cardarr from './components/Cardarr';
+import NavBar from './Landing/NavBar'
+import PlantI from './Landing/PlantI';
+import Shop from './Landing/Shop'
+import Nurseries from './Landing/Nurseries';
 import React from 'react';
+import Contact from './Landing/Contact';
+
 
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state={
-        plants:[]
-    }
-}
-componentDidMount(){
-    fetch('http://localhost:4000/plants')
-    .then(response=>response.json())
-    .then(data => {this.setState({plants:data})})
-    .catch(e => {console.log(e)})
-}
+
 
 render(){
   return (
-    <div className="App">
-      <Search/>
-      <Cardarr/>
+    <>
+    <div className='rooter'>
+      <NavBar/>
     </div>
+    <div className='landCards'>
+    <PlantI/>
+    <Nurseries/>
+    <Shop/>
+    </div>
+    <Contact/>
+    </>
   );
 }
 }

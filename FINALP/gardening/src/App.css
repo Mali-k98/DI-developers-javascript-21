@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    background-color: grey;
+  }
+html{
+  scroll-behavior: smooth;
+}
+.rooter{
+  height: 100vh;
+  background-image: url('./lp-images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo .mylogo{
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-left: 2.5rem;
+  text-decoration: none;
+}
+nav{
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+  display: flex;
+}
+nav .nav-link{
+  background-color: rgba(128, 128, 128, 0.472);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.842);
+  padding: 0 11px;
+}
+.nav-link:hover{
+  color: #007f00;
+  transition: 200ms ease-in-out all;
+}
+/*for tablets */
+@media screen and (min-width: 490px){
+  header{
+      width: 100%;
+  }
+  .logo .mylogo{
+      font-size: 38px;
+      margin-left: 9.5rem;
+  }
+  nav{
+      margin-left: 4rem;
+  }
+  nav .nav-link{
+      padding: 0 30px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*for pc small screen */
+@media screen and (min-width: 720px){
+  header{
+      width: 100%;
+      position: relative;
+  }
+  .logo .mylogo{
+      font-size: 30px;
+      margin-left:1rem;
+      position: relative;
+      top: 27px;
+  }
+  nav{
+      margin-right: 3rem;
+      float: right;
+      line-height: 2px;
+  }
+  nav .nav-link{
+      padding: 10px 30px;
+  }
+}
+/*for pc large screen*/
+@media screen and (min-width: 1200px){
+  header{
+      width: 100%;
+      position: relative;
+  }
+  .logo .mylogo{
+      font-size: 30px;
+      margin-left:5rem;
+      position: relative;
+      top: 29px;
+  }
+  nav{
+      margin-right: 5rem;
+      float: right;
+      margin-bottom: 35px;
+  }
+  nav .nav-link{
+      padding: 10px 0px;
+      margin: 0 40px;
+      font-size: 20px;
+  }
+}
+.landCards{
   display: flex;
-  flex-direction: column;
+}
+.landing{
+  margin: auto;
+  display: grid;
+  height: 80vh;
+  width: 40vw;
+  background-color: ivory;
+}
+.text{
+  margin:auto ;
+}
+.landingImages{
+  margin: auto;
+  float: left;
+  height: 40vh;
+  width: 20vw;
+  border-radius: 2px;
+}
+.button{
+  margin: auto;
+  border-radius: 5px;
+  width: 10vw;
+  border: none;
+}
+.button:hover{
+  background-color: #007f00;
+  transition: 200ms;
+}
+.contact{
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cform{
+  padding: 15px;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#message{
+  height: 20vh;
+}
+.input{
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+  width: 50vw;
 }
