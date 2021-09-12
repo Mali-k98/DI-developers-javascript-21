@@ -1,0 +1,11 @@
+
+
+.container{
+    display: grid;
+    justify-content: center;
+}
+table td{
+    border: solid violet;
+    width: 100px;
+    height: 100px;
+}

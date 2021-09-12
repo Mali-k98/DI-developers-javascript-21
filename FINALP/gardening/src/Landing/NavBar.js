@@ -1,20 +1,21 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import Scroll from 'react-scroll'
 
 function Navbar() {
     return (
-        <>
-        <div >
-        <div class="logo">
-        <a href="#"class="mylogo">Janice's Garden</a>
+        <div className='navbar'>
+        <div className="logo">
+        <Link to="/" className='mylogo'>Janice's Garden</Link>
         </div>
         <nav>
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Plants</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>
+        
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/about">About</Link>
+            <Link className="nav-link" to="/help">Help</Link>
+            <Link className="nav-link" to="/">Contact</Link>
         </nav>
         </div>
-        </>
     )
 }
 

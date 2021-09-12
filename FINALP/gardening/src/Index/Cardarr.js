@@ -7,9 +7,11 @@ const Cardarr =(props)=> {
     
     return (
         <div>
+        <div  className='card-list'>
             {plants.map((item,i)=>{
-                return <Card plants={item}/>
+                return <Card plantsInfo={item}/>
             })}
+        </div>
         </div>
     )
 }

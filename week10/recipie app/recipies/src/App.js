@@ -2,27 +2,25 @@ import React,{useEffect,useState} from 'react';
 import './App.css';
 
 const App=()=> {
-  
-  const fetchData=()=>{
-  return fetch(`https://edamam-recipe-search.p.rapidapi.com/search?q=chicken`, {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "edamam-recipe-search.p.rapidapi.com",
-		"x-rapidapi-key": "db172b0929msh659d297ba64258bp1b898cjsnb7f3ac452162"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-},[]);
-}
-  
+    
+  const API_KEY='932a602fdd9f7e6f7593dc12bf1ab727	'
+  const API_ID ="7fca2b06"
+
+  const [recipes,setRecipes]= useState([])
   
   useEffect(()=>{
-    console.log('effect has run');
-  })
+    fetchData()
+  },[])
+
+  const fetchData = async ()=>{
+  const response = await fetch(
+    `http://api/edamam.com/search?q=chicken&app_id=${API_ID}&app_key=${API_KEY}`)
+  const data = await response.json()
+  console.log(data);
+  setRecipes(data.hits)
+}
+
+
   return (
     <>
       <form className='search-form'>

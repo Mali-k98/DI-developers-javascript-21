@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Klee One', cursive;
   font-weight: bolder;
   text-decoration: none;
 }
 body{
-    background-color: grey;
+    background-color: #b8ffd7 ;
   }
 html{
   scroll-behavior: smooth;
@@ -21,92 +23,37 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.navbar{
+  background-color: rgba(148, 120, 120, 0.582);
+}
 .logo .mylogo{
-  font-size: 40px;
-  color: rgb(255, 255, 255);
-  margin-left: 2.5rem;
+  font-size: 30px;
+  color: #ffff;
   text-decoration: none;
+  text-shadow: 3px 3px rgba(50,70,50,0.75);
+}
+.mylogo:hover{
+  text-decoration: none;
+  color: #b8ffd7
 }
 nav{
-  margin-left: 1rem;
-  margin-top: 0.3rem;
   display: flex;
 }
-nav .nav-link{
-  background-color: rgba(128, 128, 128, 0.472);
-  border-radius: 10px;
+.nav-link{
   color: rgba(255, 255, 255, 0.842);
-  padding: 0 11px;
+  /* padding: 10px;
+  margin: 10px; */
 }
 .nav-link:hover{
-  color: #007f00;
+  color: #b8ffd7;
   transition: 200ms ease-in-out all;
-}
-/*for tablets */
-@media screen and (min-width: 490px){
-  header{
-      width: 100%;
-  }
-  .logo .mylogo{
-      font-size: 38px;
-      margin-left: 9.5rem;
-  }
-  nav{
-      margin-left: 4rem;
-  }
-  nav .nav-link{
-      padding: 0 30px;
-  }
-}
-/*for pc small screen */
-@media screen and (min-width: 720px){
-  header{
-      width: 100%;
-      position: relative;
-  }
-  .logo .mylogo{
-      font-size: 30px;
-      margin-left:1rem;
-      position: relative;
-      top: 27px;
-  }
-  nav{
-      margin-right: 3rem;
-      float: right;
-      line-height: 2px;
-  }
-  nav .nav-link{
-      padding: 10px 30px;
-  }
-}
-/*for pc large screen*/
-@media screen and (min-width: 1200px){
-  header{
-      width: 100%;
-      position: relative;
-  }
-  .logo .mylogo{
-      font-size: 30px;
-      margin-left:5rem;
-      position: relative;
-      top: 29px;
-  }
-  nav{
-      margin-right: 5rem;
-      float: right;
-      margin-bottom: 35px;
-  }
-  nav .nav-link{
-      padding: 10px 0px;
-      margin: 0 40px;
-      font-size: 20px;
-  }
 }
 .landCards{
   display: flex;
 }
 .landing{
   margin: auto;
+  padding: 10px;
   display: grid;
   height: 80vh;
   width: 40vw;
@@ -122,17 +69,19 @@ nav .nav-link{
   width: 20vw;
   border-radius: 2px;
 }
-.button{
+button{
   margin: auto;
   border-radius: 5px;
   width: 10vw;
   border: none;
 }
-.button:hover{
-  background-color: #007f00;
+button:hover{
+  text-decoration: none;
+  background-color: #b8ffd7;
   transition: 200ms;
 }
 .contact{
+  padding: 20px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -149,4 +98,112 @@ nav .nav-link{
   border-radius: 10px;
   border: none;
   width: 50vw;
+}
+.title{
+  color: #b8ffd7;
+  font-weight: 900;
+  padding: 10px;
+  margin-left: 50vw;
+  font-size: 2.2em;
+}
+.blog-item{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.item{
+  margin-left: 30px;
+  padding: 10px;
+  height: 30vh;
+  width: 15vw;
+}
+.slip{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 20px;
+  height: 58vh;
+  width: 20vw;
+  border-radius: 20px;
+  background-color: #ffff;
+}
+.nList{
+  padding: 15px;
+  margin: 50px;
+}
+.nList li{
+  text-decoration: none;
+}
+.scale{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100vh;
+  background-color: #ffff;
+  padding: 10px;
+  margin: 20px;
+}
+.s-s{
+  display: flex;
+}
+.card-index{
+  display: grid;
+}
+
+.search{
+  height: 10vh;
+  width: 30vw;
+  margin: 20px;
+  margin-left: 33vw;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-img{
+  height: 200px;
+  width: 150px;
+}
+.card-list{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+.card{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  height: 58vh;
+  width: 22vw;
+  border-radius: 5px;
+  background-color: #ffff;
+}
+.Bot-Avatar{
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+.bot-img, .react-chatbot-kit-user-avatar-container{
+  width: 52px;
+  height: 50px;
+  border-radius: 50%;
+}
+.react-chatbot-kit-user-avatar-container{
+  background-color: #F08080;
+}
+.post{
+  background-color: #ffff;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 10px;
 }

@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Search() {
+function Search(props) {
+    const { onInputChange, onButtonClick} = props;
     return (
-        <div>
-            <input type='text'/>
+        <div >
+            <input type='text'
+            className='search'
+            placeholder='search for a plant...'
+            onChange={onInputChange}
+            />
         </div>
     )
 }
