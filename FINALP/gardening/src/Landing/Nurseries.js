@@ -11,7 +11,7 @@ function Nurseries() {
         <h1>Nurseries</h1>
         <p>A helpful directory of where to buy all your starting plants</p>
         </div>
-        <button className='button'><Link to='/nursery'>Get Started!</Link> </button>
+        <Link to='/nursery'><button className='button'>Get Started! </button></Link>
         </div>
         </>
     )

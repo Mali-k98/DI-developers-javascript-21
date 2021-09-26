@@ -1,5 +1,8 @@
-import React from 'react'
-import { useState } from 'react'
+import React ,{useState} from 'react'
+import tem from '../card-img/temp.png'
+import sun from '../card-img/sun.png'
+import hum from '../card-img/hum.png'
+import drop from '../card-img/drop.png'
 
 
 const Card=(props) =>{
@@ -19,11 +22,11 @@ const Card=(props) =>{
         setClick(false)
     }
 
-    if(click != true){
+    if(click !== true){
     return (
         <div className='card'>
             <img src={`${photo}`} alt={`${name} image`} className='card-img'/>
-            <h3>{name}({type})</h3>
+            <h4>{name}({type})</h4>
             <p style={{fontStyle:'italic'}}>{latin}</p>
             <button onClick={handleClick}>Get more info</button>
         </div>
@@ -32,10 +35,10 @@ const Card=(props) =>{
         return(
             <div className='card'>
                 Plant Requirments:
-                <p>light:{light}</p>
-                <p>temp:{temp}</p>
-                <p>humidity:{humidity}</p>
-                <p>water:{water}</p>
+                <p><img style={{height:'8vh'}} src={sun}/> light: {light}</p>
+                <p><img style={{height:'7vh'}} src={tem}/> temp: {temp}</p>
+                <p><img style={{height:'6vh'}} src={hum}/> humidity: {humidity}</p>
+                <p ><img style={{height:'9vh'}} src={drop}/> water: {water}</p>
                 <button onClick={returnClick}>Back</button>
             </div>
         )

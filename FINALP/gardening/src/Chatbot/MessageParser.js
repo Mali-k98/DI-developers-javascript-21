@@ -14,6 +14,12 @@ class MessageParser extends Component {
         if(lowercase.includes('hello')){
             this.actionProvider.helloHandler()
         }
+        if(lowercase.includes('thanks')){
+            this.actionProvider.thankHandler()
+        }
+        if(lowercase.includes('thank you')){
+            this.actionProvider.thankHandler()
+        }
         if(lowercase.includes('hi')){
             this.actionProvider.helloHandler()
         }

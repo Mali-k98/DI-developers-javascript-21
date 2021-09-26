@@ -2,28 +2,43 @@ import NavBar from '../Landing/NavBar'
 import PlantI from '../Landing/PlantI';
 import BlogDirection from './BlogDirection'
 import Nurseries from '../Landing/Nurseries';
-import React from 'react';
+import About from '../About/About';
 import Contact from '../Landing/Contact';
 
-class Landing extends React.Component {
+import React, { useRef } from 'react'
+import Help from '../Chatbot/Help';
+import { scroller } from "react-scroll";
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop) 
 
-render(){
+const Landing =()=>{
+    const myRef = useRef(null)
+    const executeScroll = () => scrollToRef(myRef)
+
+    const scrollToSection = () => {
+        scroller.scrollTo("about", {
+        duration: 100,
+        delay: 0,
+        smooth: "easeInOutQuart",
+    });
+    };
+
 return (
     <>
-
     <div className='rooter'>
-    <NavBar/>
+    <NavBar executeScroll={executeScroll} scrollToSection={scrollToSection}/>
+    <Help/>
     </div>
     <div className='landCards'>
     <PlantI/>
     <Nurseries/>
     <BlogDirection/>
     </div>
-    <Contact/>
+    <About myRef={myRef}/>
+    <Contact myRef={myRef}/>
     </>
 );
 }
-}
+
 
 export default Landing;

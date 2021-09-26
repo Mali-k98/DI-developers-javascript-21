@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Cardarr from './Cardarr'
 import Search from './Search'
-import Scale from './Scale'
 import Navbar from '../Landing/NavBar'
 
 
@@ -37,12 +36,11 @@ class Index extends Component {
         return (
             <div className='card-index'>
                 <Navbar/>
-                <Search onInputChange={this.handleChange} />
                 <div className='s-s'>
-                <Scale/>
-                <div>
+                
+                <Search onInputChange={this.handleChange} />
+                
                 <Cardarr plants={filterPlants}/>
-                </div>
                 </div>
             </div>
         )

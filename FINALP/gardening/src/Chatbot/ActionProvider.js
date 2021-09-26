@@ -12,6 +12,10 @@ export default class ActionProvider extends Component {
         const message =this.createChatBotMessage('How can i help you?',{widget:'options3'})
         this.setChatbotMessage(message)
     }
+    thankHandler=()=>{
+        const message =this.createChatBotMessage('No problem!')
+        this.setChatbotMessage(message)
+    }
     helpHandler=()=>{
         const message =this.createChatBotMessage('What do you want to know about? watering, light, humidity? ', {widget: 'options1'})
         this.setChatbotMessage(message)

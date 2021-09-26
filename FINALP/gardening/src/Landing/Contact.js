@@ -1,23 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
-import {useEffect} from  'react'
 
-function Contact() {
-    
+
+
+function Contact(props) {
+    const {myRef}=props
+    const [result, setResult]=useState(false)
 
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'template_9r8n54n', e.target, 'user_ICkuOAfPGjkLSkuVaotZR')
+        emailjs.sendForm('service_063nivi', 'template_9r8n54n', e.target, 'user_ICkuOAfPGjkLSkuVaotZR')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+            e.target.reset()
+            setResult(true)
     }
-    
+    const Result =()=>{
+        alert('your message has been sent!')
+        // return(
+        //     <p>your message was sent!</p>
+        // )
+    }
+
     return (
-        <div className='contact'>
+        <div ref={myRef} className='contact' id="contact">
+            <a name='contact'/>
             <h1 style={{fontWeight:900}}>we would love to hear from you</h1>
             <form className='cform' onSubmit={sendEmail}>
                 First Name:<br/>
@@ -29,7 +40,10 @@ function Contact() {
                 Message:<br/>
                 <input className='input' id='message' type='text' name='message'/><br/><br/>
                 
-                <button>Enter</button>
+                <button onClick={Result}>Enter</button>
+                {/* <div className='row'>
+                    {result ? <Result/> : null}
+                </div> */}
             </form>
         </div>
     )

@@ -9,8 +9,8 @@ import Nursery from './Nurseries/Nursery'
 import Blog from './Blog/Blog'
 import About from './About/About'
 import Help from './Chatbot/Help';
-import Post1 from './Blog/Posts/Post1';
-import Post2 from './Blog/Posts/Post2';
+import Post1 from './Blog/Posts/Post1'
+import Post2 from './Blog/Posts/Post2'
 import Post3 from './Blog/Posts/Post3'
 import Post4 from './Blog/Posts/Post4'
 
@@ -18,6 +18,7 @@ import Post4 from './Blog/Posts/Post4'
 function App() {
   
   return (
+    <>
     <div>
       <Switch>
         <Route exact path='/' component={Landing}/>
@@ -26,12 +27,13 @@ function App() {
         <Route exact path='/blog' component={Blog}/>
         <Route exact path='/about' component={About}/>
         <Route exact path='/help' component={Help}/>
-        <Route exact path='/blog1' component={Post1}/>
-        <Route exact path='/blog2' component={Post2}/>
-        <Route exact path='/blog3' component={Post3}/>
-        <Route exact path='/blog4' component={Post4}/>
+        <Route exact path='/watering-tips' component={Post1}/>
+        <Route exact path='/gnomes' component={Post2}/>
+        <Route exact path='/soil' render={()=><Post3/>}/>
+        <Route exact path='/decor' component={Post4}/>
       </Switch>
     </div>
+    </>
   )
 }
 

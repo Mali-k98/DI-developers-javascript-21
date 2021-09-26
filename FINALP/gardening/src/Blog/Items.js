@@ -15,28 +15,28 @@ function Items() {
             < img className='item' src={a}/>
             <p>Watering Right</p>
             <p>common newbie mistakes, over watering and root rot</p>
-            <button><Link to='/blog1'>Read Article</Link> </button>
+            <Link to='/watering-tips'><button>Read Article</button></Link> 
         </div>
 
         <div className='slip'>
             < img className='item' src={c}/>
             <p>Gnomes</p>
             <p>The history of Gnomes and how they came to be our favourite garden decoration!</p>
-            <button><Link to='/blog2'>Read Article</Link> </button>
+            <Link to='/gnomes'><button>Read Article</button></Link> 
         </div>
 
         <div className='slip'>
             < img className='item' src={d}/>
             <p>Lets Talk Soil</p>
             <p>Understanding what soil is best!</p>
-            <button><Link to='/blog3'>Read Article</Link> </button>
+            <Link to='/soil'><button>Read Article</button></Link> 
         </div>
 
         <div className='slip'>
             < img className='item' src={e}/>
             <p>All about positions</p>
             <p>decorarion tips: how to poition your plants to keep your home chic</p>
-            <button><Link to='/blog4'>Read Article</Link> </button>
+            <Link to='/decor'><button>Read Article</button></Link> 
         </div>
 
         </div>

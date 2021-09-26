@@ -14,7 +14,7 @@ function BlogDirection() {
         <h1>Blog</h1>
         <p>A garden lovers blogs about gardening!</p>
         </div>
-        <button className='button'><Link to='/blog'> Get Started!</Link></button>
+        <Link to='/blog'> <button className='button'>Get Started!</button></Link>
         </div>
         </>
     )

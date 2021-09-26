@@ -14,7 +14,7 @@ function PlantI() {
         <p>The friendly guide to helping you start growing 
             your own plants at home</p>
         </div>
-        <button className='button'><Link to='/index'> Get Started!</Link></button>
+        <Link to='/index'> <button className='button'>Get Started!</button></Link>
         
         </div>
         </>
