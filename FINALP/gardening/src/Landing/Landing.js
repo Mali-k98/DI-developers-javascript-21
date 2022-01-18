@@ -25,8 +25,8 @@ const Landing =()=>{
 
 return (
     <>
-    <div className='rooter'>
     <NavBar executeScroll={executeScroll} scrollToSection={scrollToSection}/>
+    <div className='rooter'>
     <Help/>
     </div>
     <div className='landCards'>

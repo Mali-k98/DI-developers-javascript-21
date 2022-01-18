@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 
-
+:root{
+  --main-bg-clr: #a7bfac;
+  --dark-green: #4d6b53;
+  --light-green: #e0e8e1;
+  --white-green: #f7f9f8;
+  --light-pink: #E7C5AF;
+  --dark-pink:#E8A88B;
+}
 ::selection{
-  background-color: #f080f0;
+  background-color: var(--light-pink);
 }
 *{
   margin: 0;
@@ -16,27 +23,32 @@
   text-decoration: none;
 }
 body{
-    background-color: 	#50C878;
+    color: var(--dark-green);
   }
 html{
   scroll-behavior: smooth;
+  background-color: #e8a88b73;
 }
 .rooter{
-  height: 98vh;
+  height: 100vh;
+  background-attachment: fixed;
   background-image: url('./lp-images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .navbar{
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: var(--dark-green);
 }
 .logo .mylogo{
   font-size: 45px;
   font-family: 'IM Fell French Canon', serif;
   font-weight: 900;
-  color: #50C878;
+  color: var(--main-bg-clr);
   text-decoration: none;
   text-shadow: 3px 3px rgba(50,70,50,0.75);
+}
+.logo:hover{
+  text-decoration: none;
 }
 nav{
   display: flex;
@@ -48,12 +60,12 @@ nav{
   line-height: 2rem;
 }
 .nav-link{
-  color: 	#F8FFF8;
+  color: 	var(--white-green);
   font-weight: 700;
   font-size: 1.5rem;
 }
 .nav-link:hover{
-  color: #50C878;
+  color: var(--main-bg-clr);
   transition: 200ms ease-in-out all;
 }
 .landCards{
@@ -61,16 +73,27 @@ nav{
 }
 .landing{
   background-color: #03ce94be;
+  color: #00291d;
   margin: 0;
   padding: 20px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
   width: 32.9vw;
+  text-align: left;
+  /* width: 40vw; */
+  background-color: var(--main-bg-clr);
 }
 .landing:hover{
-  background-color: #008f66;
+ background-color: #204d28bb;
+ color:#a1adaa;
+ font-size: 2.5rem;
+ line-height: 3rem;
+}
+.landing:hover h1{
+  font-size: 4rem;
 }
 .text{
   margin:auto ;
@@ -83,13 +106,14 @@ nav{
   border-radius: 2px;
 }
 button{
+  color: var(--dark-green);
   border-radius: 5px;
   width: 10vw;
   border: none;
 }
 button:hover{
   text-decoration: none;
-  background-color: #00B180;
+  background-color: var(--dark-pink);
   transition: 200ms;
 }
 .contact{
@@ -97,6 +121,10 @@ button:hover{
   display: grid;
   align-items: center;
   justify-content: center;
+  background-color: var(--main-bg-clr);
+}
+.about{
+  background-color: var(--main-bg-clr);
 }
 .cform{
   padding: 15px;
@@ -107,18 +135,19 @@ button:hover{
 }
 .input{
   height: 6vh;
+  color: var(--dark-green);
   border-radius: 10px;
-  border: 2px solid #00B180;
+  border: 2px solid var(--dark-green);
   width: 50vw;
-  background-color: #F8FFF8;
+  background-color: var(--main-bg-clr);
 }
 .input:focus{
-  border: 2px solid #c275c2;
-  background-color: #bbf8bb;
+  border: 2px solid var(--dark-pink);
+  background-color: var(--light-green);
   outline: none;
 }
 .title{
-  color: #00B180;
+  color: var(--main-bg-clr);
   font-weight: 900;
   padding: 10px;
   margin-left: 50vw;
@@ -127,7 +156,7 @@ button:hover{
 .blog-item{
   display: flex;
   grid-template-columns: repeat(4,1fr);
-  width: 100%w;
+  width: 90%;
   margin-left: 2vw;
   overflow-y:auto;
   flex-direction:row;
@@ -135,10 +164,16 @@ button:hover{
   margin-right: 5vw;
   flex-wrap: wrap;
 }
+
 .item{
   padding: 10px;
   height: 30vh;
   width: 15vw;
+}
+.blogs-menu{
+  background-color: #e8a88b73;
+  background-size: cover;
+  height: 100vh;
 }
 .slip{
   display: grid;
@@ -150,13 +185,14 @@ button:hover{
   height: 80%;
   width: 37vh;
   border-radius: 20px;
-  background-color: #2a5336a2;
+  /* background-color: #2a5336a2; */
   color: #07110b;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: Rockwell;
   line-height: 2rem;
   text-align: left;
+  background-color: var(--main-bg-clr);
 }
 .slip:hover{
   text-decoration: none;
@@ -166,7 +202,7 @@ button:hover{
   padding: 20px;
   margin-left: 20vw;
   margin-right: 20vw;
-  background-color: #F8FFF8;
+  background-color: var(--main-bg-clr);
   /* height: 100vh; */
   text-decoration: none;
 }
@@ -176,14 +212,17 @@ button:hover{
 }
 a{
   font-weight: 550;
-  color: #00B180;
+  color: var(--main-bg-clr);
 }
 h2, h1{
   font-weight: 600;
 }
+/* img{
+  margin: 10erm;
+} */
 .li :hover{
   text-decoration: none;
-  color: #f080f0;
+  color: var(--dark-pink);
 }
 .nurse-img{
   height: 30vh;
@@ -195,11 +234,11 @@ h2, h1{
   margin: 10px;
   justify-content: center;
   align-items: center;
-  width: 22vw;
-  height: 60vh;
+  width: 20vw;
+  height: 55vh;
   border-radius: 5px;
-  background-color: #bbf8bb;
-  overflow: scroll;
+  background-color: var(--main-bg-clr);
+  overflow-y: scroll;
 }
 .card-index{
   display: grid;
@@ -216,7 +255,7 @@ h2, h1{
   width: 30vw;
   margin: 20px;
   padding: 10px;
-  border: none;
+  border: 1px solid var(--dark-green);
   border-radius: 5px;
 }
 .search:focus{
@@ -233,7 +272,7 @@ h2, h1{
   
 }
 .card{
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
@@ -241,10 +280,10 @@ h2, h1{
   height: 56vh;
   width: 20vw;
   border-radius: 5px;
-  background-color: #F8FFF8;
+  background-color: var(--main-bg-clr);
 }
 .Bot-Avatar{
-  color: #F8FFF8;
+  color: var(--white-green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,7 +298,7 @@ h2, h1{
 
 }
 .post{
-  background-color: #2a5336a2;
+  background-color: #0e74292c;
   margin-right: 10vw;
   margin-left: 10vw;
   padding: 5rem;
@@ -268,6 +307,10 @@ h2, h1{
   font-size: 1.5rem;
   font-family: Rockwell;
   line-height: 3rem;
+  /* background-color: var(--white-green); */
+  margin-right: 15vw;
+  margin-left: 15vw;
+  padding: 10px;
 }
 .chive{
   float: right;
@@ -308,4 +351,7 @@ h2, h1{
 .about{
   background-color: #4e5c58d5;
   color: #001f16;
+}
+.post_page{
+  background-color: #e8a88b73;
 }
