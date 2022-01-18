@@ -6,9 +6,9 @@ function Navbar(props) {
     
     return (
         <div className='navbar'>
-        <div className="logo">
+        <Link className="logo" to="/">
         <h1 className='mylogo'>Bloom's</h1>
-        </div>
+        </Link>
         <nav>
         
             <Link className="nav-link" to="/">Home</Link>

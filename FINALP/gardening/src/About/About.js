@@ -6,7 +6,7 @@ function About(props) {
     
     return (
         <>
-        <div className='about'  style={{padding:'10px',backgroundColor:'#F8FFF8'}}>
+        <div className='about'  style={{padding:'10px'}}>
             <div style={{display:'flex',padding:'10px',margin:'10px',borderTop:'1px solid grey'}}>
                 <div className='gg'></div>
                 <div style={{marginTop:'50px'}}>
