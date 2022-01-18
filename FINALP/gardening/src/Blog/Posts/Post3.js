@@ -4,7 +4,7 @@ import bag from '../../blog-img/soilbag.jpg'
 
 function Post3() {
     return (
-        <>
+        <div className="post_page">
         <Navbar/>
         <div className='post'>
             <h1>Lets talk soil</h1>
@@ -24,7 +24,7 @@ function Post3() {
             
             <p>Houseplants need to have room in their soil for root growth, aeration, and proper drainage. If a soil mix contains actual dirt from outside, there is a great chance that your indoor plant won’t respond well to it. Plants also need a balanced pH and regular nutrients to keep them growing and thriving. With all of the combined measures, your plants will thank you for keeping their home healthy.</p>
         </div>
-        </>
+        </div>
     )
 }
 

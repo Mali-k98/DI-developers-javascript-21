@@ -4,7 +4,7 @@ import gnome from '../../blog-img/grey-gnome.jpg'
 
 function Post2() {
     return (
-        <>
+        <div className="post_page">
             <Navbar/>
         <div className='post'>
             <h1>The history of Gnomes</h1>
@@ -27,7 +27,7 @@ function Post2() {
             <p>No matter where you shop for your garden gnome, know that you are following a rich history of people who have used gnomes for decoration, protection and to bring a bit of whimsy into the garden.</p>
         
         </div>
-        </>
+        </div>
     )
 }
 

@@ -4,7 +4,7 @@ import can from '../../blog-img/watering.jpg'
 
 function Post1() {
     return (
-        <>
+        <div className="post_page">
             <Navbar/>
         <div className='post'>
             <h1>Watering right</h1>
@@ -19,7 +19,7 @@ function Post1() {
             <p>Tip: It’s okay to be flexible in your plant care habits. Monitor how water affects your plant. The rule of thumb is: most common houseplants prefer frequent waterings, but there will be special exceptions.</p>
             <p>Keep in mind your soil is like a sponge. Most houseplants like a porous soil, allowing room for water and air pockets. If your soil is moist to begin with, hold off on watering for now. If you notice water pours out through the drainage holes immediately, your soil is actually bone dry and the soil is repelling water, rather than soaking it in. Avoid pouring water onto bone dry soil. Water will only move through and around the edges of your planter and will not be absorbed by the roots. Your plant should absorb water slowly through its roots so, before you water again, you’ll want to check how dry the soil is. Use your fingers and feel if the soil is wet at least 2 inches below the surface. If so, you can add water. If your soil is wet at the surface, you can hold off.</p>
         </div>
-        </>
+        </div>
     )
 }
 

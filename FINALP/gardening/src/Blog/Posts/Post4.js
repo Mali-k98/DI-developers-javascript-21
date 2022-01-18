@@ -5,7 +5,7 @@ import height from '../../blog-img/height.jpg'
 
 function Post4() {
     return (
-        <>
+        <div className="post_page">
         <Navbar/>
         <div className='post'>
             <h1>All about positions</h1>
@@ -24,7 +24,7 @@ function Post4() {
             <p>Porches are another great place to decorate with plants.Your local nursery can help you plan out what to put in your pot or if you are good at planting then you have this covered.</p>
             <p>Did you know there are many things in your home that produce toxins in the air?  Ammonia, Benzene, Xylene, Formaldehyde, and Trichloroethylene are common chemicals in products you use or have on finishes in your home.  </p>
         </div>
-        </>
+        </div>
     )
 }
 

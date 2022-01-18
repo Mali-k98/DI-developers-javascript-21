@@ -8,8 +8,7 @@ function Blog() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        
-        <div>
+        <div className="blogs-menu">
             <Navbar/><br/>
             {/* <h1 className='title'>Blog</h1> */}
             <Items/>
