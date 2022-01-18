@@ -15,8 +15,8 @@ function Post2() {
             <p>The American company, Kimmel Gnomes, is one of the few manufacturers of clay and resin gnomes that are finished by hand and not mass-produced. People who want a gnome with some soul seek out these, which come in a variety of sizes and poses.</p>
             
             <div style={{float:'left'}}>
-            <img src={gnome} alt="gnome"/>
-            <h6 style={{fontStyle:'italic'}}>(This is a gnome found in many gardens around the word)</h6>
+            <img style={{marginRight:'20px'}} src={gnome} alt="gnome"/>
+            <h6 style={{fontStyle:'italic'}}>(This is a gnome found in many gardens around<br/>the word)</h6>
             </div>
             
             <p>The history of gnomes also passes along the folklore and why you would want one in your garden. Gnomes are known as symbols of good luck.

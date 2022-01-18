@@ -4,16 +4,17 @@ import {Link} from 'react-router-dom'
 
 function Nurseries() {
     return (
-        <>
-        <div className='landing'>
+        <div style={{alignItems:'center'}}>
+        <Link to='/nursery' style={{textDecoration:'none'}}><button className='landing text_styles'>
+        {/* <div className='landing'> */}
         <img className='landingImages' src={nursery}/>
         <div className='text'>
         <h1>Nurseries</h1>
         <p>A helpful directory of where to buy all your starting plants</p>
         </div>
-        <Link to='/nursery'><button className='button'>Get Started! </button></Link>
+        {/* <Link to='/nursery'><button className='button'>Get Started! </button></Link> */}
+        </button></Link> 
         </div>
-        </>
     )
 }
 

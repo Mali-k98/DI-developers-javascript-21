@@ -7,16 +7,16 @@ function BlogDirection() {
     
 
     return (
-        <>
-        <div className='landing'>
+        <div style={{alignItems:'center'}}>
+        <Link to='/blog' style={{textDecoration:'none'}}><button className='landing text_styles'>
         <img className='landingImages' src={nursery}/>
         <div className='text'>
         <h1>Blog</h1>
         <p>A garden lovers blogs about gardening!</p>
         </div>
-        <Link to='/blog'> <button className='button'>Get Started!</button></Link>
+        {/* <Link to='/blog'> <button className='button'>Get Started!</button></Link> */}
+        </button></Link> 
         </div>
-        </>
     )
 }
 
