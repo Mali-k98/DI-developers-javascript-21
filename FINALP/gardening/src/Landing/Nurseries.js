@@ -9,8 +9,8 @@ function Nurseries() {
         {/* <div className='landing'> */}
         <img className='landingImages' src={nursery}/>
         <div className='text'>
-        <h1>Nurseries</h1>
-        <p>A helpful directory of where to buy all your starting plants</p>
+        <h1>Products</h1>
+        <p>A helpful directory of where to buy all the best gardening equipment!</p>
         </div>
         {/* <Link to='/nursery'><button className='button'>Get Started! </button></Link> */}
         </button></Link> 

@@ -40,7 +40,7 @@ function Contact(props) {
                 Message:<br/>
                 <input className='input' id='message' type='text' name='message'/><br/><br/>
                 
-                <button onClick={Result}>Enter</button>
+                <button onClick={Result} className='btn'>Enter</button>
                 {/* <div className='row'>
                     {result ? <Result/> : null}
                 </div> */}

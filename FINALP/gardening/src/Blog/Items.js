@@ -10,7 +10,7 @@ import e from '../blog-img/lrg-pot.jpeg'
 function Items() {
     return (
         <div className='blog-item'>
-
+        
         <div>
         <Link to='/watering-tips' style={{textDecoration:'none'}}><button className='slip text_styles'>
             < img className='item' src={a}/>
@@ -25,8 +25,8 @@ function Items() {
             <p>The history of Gnomes and how they came to be our favourite garden decoration!</p>
         </button></Link> 
         </div>
-
-        <div>
+        
+        <div  >
         <Link to='/soil' style={{textDecoration:'none'}}><button className='slip text_styles'>
             < img className='item' src={d}/>
             <p>Lets Talk Soil</p>
@@ -34,14 +34,14 @@ function Items() {
             </button></Link> 
         </div>
 
-        <div>
+        <div  >
         <Link to='/decor' style={{textDecoration:'none'}}><button className='slip text_styles'>
             < img className='item' src={e}/>
             <p>All about positions</p>
             <p>decorarion tips: how to poition your plants to keep your home chic</p>
             </button></Link> 
         </div>
-
+        
         </div>
     )
 }
