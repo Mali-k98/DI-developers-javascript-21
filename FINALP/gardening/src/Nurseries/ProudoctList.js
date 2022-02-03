@@ -5,7 +5,7 @@
 function ProductsList(props) {
 
     return (
-        <ul className='blog-item'>
+        <ul className="p-item">
               {props.products.map((product, index) => {
                       return <li className='product' key={index}>
                         <a href={product.link}>
