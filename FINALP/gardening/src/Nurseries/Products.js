@@ -68,8 +68,10 @@ function Products() {
 
     return (
       <>
-        <OptionDropDown id='styles_drop_down' onChange={set_style} options={styles}/>
-        <OptionDropDown id='sort_drop_down' onChange={set_sort_by} options={['no-sort', 'price', 'stars']}/>
+        <div className='filters row'>
+        <OptionDropDown label='filter by styles' id='styles_drop_down' onChange={set_style} options={styles}/>
+        <OptionDropDown label='sort by' id='sort_drop_down' onChange={set_sort_by} options={['no-sort', 'price', 'stars']}/>
+        </div>
 
         <ul className='prod-nav'>
               {categories.map((value, index) => {

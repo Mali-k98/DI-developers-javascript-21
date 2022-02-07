@@ -473,6 +473,7 @@ a:hover{
   padding: 5px;
   background-color: #5e8b676c;
   color: #2a422fda;
+  font-weight: 400;
 }
 .option_drop_down:hover{
   background-color: #2a422fda;
@@ -481,4 +482,11 @@ a:hover{
 select#option_drop_down {
   border:none !important;
   outline:0px;
+}
+.row{
+  padding: 5px;
+  /* margin: 5px; */
+}
+h6{
+  font-weight: 900;
 }
