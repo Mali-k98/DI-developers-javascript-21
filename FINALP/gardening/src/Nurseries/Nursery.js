@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react'
-import { h3 } from 'react-router-dom'
 import Navbar from '../Landing/NavBar'
 import { Products } from './Products'
 

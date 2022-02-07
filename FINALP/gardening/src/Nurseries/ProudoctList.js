@@ -13,7 +13,8 @@ function ProductsList(props) {
                             <img
                             src={product.img}/>
                             <p>{product.name}</p>
-                            <p>{product.price}$</p>
+                            <p>{product.price} $</p>
+                            <p>{product.stars} ★</p>
                           </button>
                         </a>
                       </li>

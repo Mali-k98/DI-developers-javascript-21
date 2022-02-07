@@ -126,14 +126,15 @@ button:hover{
   color: var(--light-green);
 }
 .about{
-  background-color: var(--main-bg-clr);
+  background-color: rgb(131 161 137 / 92%);
 }
 .cform{
-  padding: 15px;
+  padding: 20px;
   margin: auto;
   background-color: var(--dark-green);
   color: var(--main-bg-clr);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
 }
 .cform .btn{
   height: 10vh;
@@ -153,14 +154,22 @@ button:hover{
   height: 20vh;
 }
 .input{
+  padding: 10px;
   height: 6vh;
-  color: var(--dark-green);
+  color: var(--main-bg-clr);;
   border-radius: 10px;
   border: 3px solid var(--main-bg-clr);
   width: 50vw;
   background-color: var(--dark-green);
+  font-size: 1.5rem;
 }
 .input:focus{
+  border: 3px solid var(--dark-green);
+  background-color: var(--main-bg-clr);
+  color: var(--dark-green);
+  outline: none;
+}
+.input:hover{
   border: 3px solid var(--dark-green);
   background-color: var(--main-bg-clr);
   color: var(--dark-green);
@@ -393,7 +402,7 @@ h2, h1{
   }
 }
 .about{
-  background-color: #4e5c58d5;
+  background-color: #0d47197a !important;
   color: #001f16;
 }
 .post_page{
@@ -437,7 +446,7 @@ h2, h1{
   width: 15vw;
   background-color: #ffffff13;;
   align-items: center;
-  /* border-radius: 3%; */
+  border-radius: 3%;
   font-weight: 900;
 }
 .product:hover{
@@ -455,4 +464,21 @@ h2, h1{
 .products_page{
   background-color: #142a19ea;
   background: cover;
+}
+a:hover{
+  text-decoration: none;
+}
+.option_drop_down{
+  margin: 0.5rem;
+  padding: 5px;
+  background-color: #5e8b676c;
+  color: #2a422fda;
+}
+.option_drop_down:hover{
+  background-color: #2a422fda;
+  color: #98b89ec4;
+}
+select#option_drop_down {
+  border:none !important;
+  outline:0px;
 }
